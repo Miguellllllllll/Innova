@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Selecciona el contenedor nav */
+.navbar{
+    background: #ff4a1a !important;
+}
+/*  Selecciona las etiquetas </a> correspondientes a los iconos de redes sociales */
+.redes li > a{
+    color: #fff !important;
+}
+
+.redes li > a:hover {
+    color: #000 !important;
+}
+
+/*  Selecciona las etiquetas </a> correspondientes a las otras paginas */
+.nav-item a {
+        color: #000;
+    }
+    .nav-item a:hover {
+        transition: color .5s ;
+        color: #ffffff !important;
+    }
+    .nav-item a:active {
+        color: #000;
+    }
+    .nav-item a:visited {
+        color: #000;
+    }
+/* ESTILOS DE LA PAGINA PRINCIPAL */
+.titulo-principal {
+    color: #FF4A1A;
+}
+
+.sub-lanzamientos {
+    color: #FF4A1A;
+    text-decoration: underline #FF4A1A;
+}
+
+.botones-principales {
+    background: #FF4A1A;
+    color: #fff;
+}
+
+.botones-principales:hover {
+    background: #FF4A1A;
+    color: #fff;
+}
+
+.botones-principales:active {
+    background: #FF4A1A !important;
+    color: #fff !important;
+}
+/* ESTILOS DE LA PAGINA PRODUCTOS */
+
+/* Ajusta los botones de  nombre */
+.btn-orange {
+    background: #ff4a1a;
+    color: #fff ;
+}
+.btn-orange:hover {
+    background: #ff4c1ae1;
+    color: #fff;
+}
+.btn-orange:active {
+    background: #ff4c1abe !important;
+    color: #fff !important;
+}
+
+.titulo-contacto {
+    color: #FF4A1A;
+}
+
+.titulo-desarroladores {
+    color: #FF4A1A;
+}
+
+.formulario {
+    background: #FF4A1A;
+}
+/* Estilos de las tarjetas de descripcion de cada producto */
+.card-body::after {
+    content: " ";
+    width: 100%;
+    height: 50%;
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
+    border-left: 4px solid #000;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-body::before {
+    content: " ";
+    width: 100%;
+    height: 50%;
+    border-left: 4px solid #ff4a1a;
+    border-bottom: 4px solid #ff4a1a;
+    border-right: 4px solid #ff4a1a;
+    border-radius: 0 0 20px 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.card-text {
+    height: 260px;
+}
+
+
+/* ESTILOS DE LA PAGINA SOBRE NOSOTROS */
+.imagen > img {
+    width: 14rem;
+}
+
+
+
+
+/* Estilos para un tamaño diferente (SOBRE NOSOTROS)*/
+@media (min-width: 790px){
+    .imagen > img {
+        width: 26rem;
+    }
+}
+
+
+@media (min-width: 990px) {
+    /* ( BARRA DE NAVEGACION ) */
+    .nav {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    
+    .navbar-nav {
+        display: flex;
+        gap: 30px;
+        margin-left: 150px;
+    }
+    
+    /* (SOBRE NOSOTROS) */
+    .imagen > img {
+        width: 35rem;
+    }
+}
